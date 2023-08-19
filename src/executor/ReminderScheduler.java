@@ -1,13 +1,16 @@
 package executor;
 
+import static executor.DataBase.REMINDERS;
+
 public class ReminderScheduler{
-    void scheduleReminder(Reminder reminder) {
+    public static void scheduleReminder(Reminder reminder) {
 
     }
-    void cancelReminder(Reminder reminder) {
-
+    public static boolean cancelReminder(Reminder reminder) {
+        REMINDERS.remove(reminder);
+        return false;
     }
-    void markReminderAsCompleted(Reminder reminder) {
-
+    public static void markReminderAsCompleted(Reminder reminder) {
+        reminder.setCompleted(true);
     }
 }

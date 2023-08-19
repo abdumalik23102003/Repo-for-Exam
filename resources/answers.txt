@@ -1,0 +1,27 @@
+Mana bu savollarga javoblar:
+
+1. Thread nima?
+   - Java tilida "thread", dastur bajarish doirasi yoki o'zgaruvchilarni bajarish uchun foydalaniladigan boshqa dasturlar. Dasturlar tegishli bo'lgan amallarini parallel, ya'ni bir-biridan ajratib, bir-biriga tegishli bo'lmagan traktlarda bajarish uchun threadlar ishlatadilar. Misol uchun, bir thread asosiy dastur bajaradigan vaqt amalini bajarish uchun, ikkinchi thread esa ma'lum bir dasturni tozalash uchun ishlatilishi mumkin.
+
+2. Daemon thread nima?
+   - Daemon thread, asosiy dastur bajarish jarayonida yaratilgan va ammo asosiy dastur tugaganida avtomatik ravishda tozalangan dasturlardir. Daemon threadlar, dastur yorug'ligini ta'minlash va xizmatlarni boshqarish, masalan, avtomatik fayl saqlash va boshqarish uchun ishlatiladi.
+
+3. Thread Executors turlari:
+   - Java Executors jarayoni va o'z ichiga olishi mumkin bo'lgan eng mashhur Thread Executors turlari quyidagilar:
+     1. SingleThreadExecutor: Yagona thread yaratadi va uni ishlatadi. O'zgartirilgan vazifalarni turgani vaqtiga o'zgaradi.
+     2. FixedThreadPool: Qat'iy miqdorda thread yaratadi. Har bir vazifa alohida bir threadda ishlatiladi.
+     3. CachedThreadPool: Boshqa threadlarni o'zgarishsiz ishlatadi va zarur bo'lganda yangi threadlar yaratadi.
+     4. ScheduledThreadPool: Ish vaqtini boshqarish uchun yaratilgan thread pool, masalan, vazifani biror vaqt orqali bajarish uchun.
+
+4. Serialization bilan Deserializationning nima?
+   - Serialization, obyektlarni fayllarga yoki boshqa tarmoqlarga o'tkazishni anglatadi, shuningdek, obyektlarni yozib olish va o'qib olish jarayonlarini tushuntiradi. Serialization obyektlarni byte shaklida saqlashga imkon beradi. Deserialization esa saqlangan obyektlarni o'qib olish va obyektlarga aylanishi tushuntiradi. Java'da, Serializable interfeysi orqali obyektlarni serializatsiya qilish va deserializatsiya qilish uchun ishlatiladi.
+
+5. Log levellarni yozing:
+   - Log levellar, log ma'lumotlarni qanday ko'rsatishni aniqlaydi. Bu, odatda "DEBUG", "INFO", "WARN", "ERROR", "FATAL" va boshqa levellardan iborat bo'lib, har biri xatoliklar, eslatmalar va dastur bajarish jarayonlari haqida ma'lumotlarni bir darajada ko'rsatish uchun ishlatiladi.
+   - DEBUG: Dasturni boshqarish paytida iste'mol qilinadi. Batafsil ma'lumotlar va debug ma'lumotlari ko'rsatiladi.
+   - INFO: Dastur normal ishlashini tasdiqlovchi ma'lumotlarni ko'rsatish uchun ishlatiladi.
+   - WARN: Xatoliklar va muammo iste'molchilarni ogohlantirish uchun ishlatiladi, ammo dastur boshlanish jarayonini to'liq to'la qilishga yetmaydi.
+   - ERROR: Kutilmagan xatoliklar va dastur to'liq ishlashini to'xtatadigan xatoliklar haqida ma'lumotlar ko'rsatiladi.
+   - FATAL: To'liq dasturni to'xtatishga olib keladigan xatoliklar haqida ma'lumotlar ko'rsatiladi.
+
+Bu levellar, loglarni tahrirlash va ma'lumotlarni taqdim etishning qanday darajada eng yaxshi ko'rsatilishi kerakligini aniqlash uchun ishlatiladi.
