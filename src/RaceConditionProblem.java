@@ -5,7 +5,7 @@ public class RaceConditionProblem {
     public static final int NUM_THREADS = 4;
     public static final int INCREMENT_TIMES = 1000000;
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void problem() throws InterruptedException {
 
         Thread[] threads = new Thread[NUM_THREADS];
 
